@@ -8,13 +8,13 @@ const router = express.Router();
 
 const adminData = require('./admin');
 
+const productsController = require('../controllers/products');
+
 router.use(express.static('public'));
 
-router.get('/', (req, res, next) => {
-     const products = adminData.products;   
+console.log(adminData.products);
 
-    res.render('shop', {prods: products, docTitle: 'Shop'});
-});
+router.get('/', productsController.getProducts);
 
 
 module.exports = router;

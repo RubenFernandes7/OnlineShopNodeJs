@@ -67,6 +67,10 @@ main{
     border-radius: 2px;
 }
 
+.grid{
+    display:flex;
+}
+
 button{
     font:inherit;
     border: 1px solid #6200ff;
@@ -80,4 +84,16 @@ button:hover,
 button:active {
     background-color: #6200ff;
     color: white;
+}
+
+
+img{
+    max-width: 100px;
+    max-height: 200px;
+}
+
+article{
+    border: 1px;
+    color: black;
+    margin-left: 10px;
 }
